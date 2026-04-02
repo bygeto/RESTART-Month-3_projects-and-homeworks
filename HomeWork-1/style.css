@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #112240, #020c1b);
+  color: #e6f1ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 600px;
+  height: 550px;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(17, 34, 64, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.info {
+  display: contents;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#coins,
+#energy {
+  width: 80px;
+  height: 80px;
+}
+
+#coins {
+  background: url(./img/coins.png) center / contain no-repeat;
+}
+
+#energy {
+  background: url(./img/energy.png) center / contain no-repeat;
+}
+
+.coin,
+.power {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#counter {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background:
+    url(./img/hamster.png) center / 180px no-repeat,
+    #f68402f2;
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: 0.2s;
+}
+
+#counter:hover {
+  transform: scale(1.05);
+  background-color: #ea2604d8;
+}
+
+#counter:active {
+  transform: scale(0.95);
+}
