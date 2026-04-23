@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0d0d0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: #1c1c1e;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+input {
+  width: 250px;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: none;
+  background: #2c2c2e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  background: #3a3a3c;
+}
+
+.bmi {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #aaa;
+}
+
+.green {
+  color: #32d74b;
+}
+.orange {
+  color: #ff9f0a;
+}
+.red {
+  color: #ff453a;
+}
