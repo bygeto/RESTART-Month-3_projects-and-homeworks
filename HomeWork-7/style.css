@@ -1,57 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
-  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
-  min-height: 100vh;
-  padding: 40px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0d0d0d;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1 {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 36px;
-  letter-spacing: 1px;
+  width: 300px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: #2a2a2a;
+  color: white;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #007aff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  padding: 25px;
+  margin-top: 20px;
+  padding: 20px;
   border-radius: 15px;
-  transition: 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
-
-.card h2 {
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #00d4ff;
-}
-
-.card p {
-  font-size: 14px;
-  line-height: 1.6;
-  word-wrap: break-word;
+.hidden {
+  display: none;
 }
